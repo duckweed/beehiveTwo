@@ -3,8 +3,6 @@
 
 package com.beehivecoll.domain;
 
-import com.beehivecoll.Circle;
-import com.beehivecoll.domain.Person;
 import java.util.Set;
 
 privileged aspect Person_Roo_JavaBean {

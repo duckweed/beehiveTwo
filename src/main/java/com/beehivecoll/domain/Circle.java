@@ -1,5 +1,6 @@
-package com.beehivecoll;
+package com.beehivecoll.domain;
 
+import com.beehivecoll.domain.Officer;
 import com.beehivecoll.domain.Person;
 import java.util.HashSet;
 import java.util.Set;
@@ -26,4 +27,7 @@ public class Circle {
 
     @ManyToMany(cascade = CascadeType.ALL)
     private Set<Person> persons = new HashSet<Person>();
+
+    @ManyToMany(cascade = CascadeType.ALL)
+    private Set<Officer> officeHolders = new HashSet<Officer>();
 }

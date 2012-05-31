@@ -6,5 +6,6 @@
         <field:display field="name" id="s_com_beehivecoll_Circle_name" object="${circle}" z="tpbqNfqRoBVB23I3xncv5sJfCXo="/>
         <field:display field="description" id="s_com_beehivecoll_Circle_description" object="${circle}" z="TaXbyiV/nPNFDUk7obxcLmj0g1k="/>
         <field:display field="persons" id="s_com_beehivecoll_Circle_persons" object="${circle}" z="HZ9t60+0l+p5kDV5RYFnWAic6U8="/>
+        <field:display field="officeHolders" id="s_com_beehivecoll_Circle_officeHolders" object="${circle}" z="w6Qm4/opzbCZ7+D9H2IgirRfl9A="/>
     </page:show>
 </div>

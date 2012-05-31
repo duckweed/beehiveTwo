@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_beehivecoll_domain_Officer" object="${officer}" path="/officers" z="XL4XRzW/r/oTubyMSAENrMM5F1o=">
+        <field:display field="title" id="s_com_beehivecoll_domain_Officer_Title" object="${officer}" z="VYMvj273ITNE/lewaOVE8Rgb0LA="/>
+        <field:display field="description" id="s_com_beehivecoll_domain_Officer_description" object="${officer}" z="pf7/3L6cH4myJL7GPNr6ckpdRbk="/>
+        <field:display field="responsibility" id="s_com_beehivecoll_domain_Officer_responsibility" object="${officer}" z="zUZk67hwveOafWaPj5lhyjaOuqE="/>
+        <field:display field="holder" id="s_com_beehivecoll_domain_Officer_holder" object="${officer}" z="xLK4N+ij3Cac0Nj4Mubw2+L+eOA="/>
+    </page:show>
+</div>

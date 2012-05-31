@@ -6,6 +6,7 @@
         <field:textarea field="name" id="c_com_beehivecoll_Circle_name" required="true" z="JIrkhxIlwxFUzTxzw97GRjB7ong="/>
         <field:textarea field="description" id="c_com_beehivecoll_Circle_description" required="true" z="xn7TxbGS3sQDtPaVIzJutwl5APM="/>
         <field:select field="persons" id="c_com_beehivecoll_Circle_persons" itemValue="id" items="${people}" multiple="true" path="/people" z="xSPvlUETMmeodCFkvZMXGQrcvkQ="/>
+        <field:select field="officeHolders" id="c_com_beehivecoll_Circle_officeHolders" itemValue="id" items="${officers}" multiple="true" path="/officers" z="R6ztddanMjFsZqXZ4OembT+nFoU="/>
     </form:create>
     <form:dependency dependencies="${dependencies}" id="d_com_beehivecoll_Circle" render="${not empty dependencies}" z="n6+0wJyHEhx/prRjY14A1wR+w1o="/>
 </div>

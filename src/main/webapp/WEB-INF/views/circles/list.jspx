@@ -7,6 +7,7 @@
             <table:column id="c_com_beehivecoll_Circle_name" property="name" z="b84b3JmgNmAwRxx5AlKeR9P2HQg="/>
             <table:column id="c_com_beehivecoll_Circle_description" property="description" z="WXQx/Hsfm3CrPu+s3dH0JWkc8Ew="/>
             <table:column id="c_com_beehivecoll_Circle_persons" property="persons" z="uRfjvbCHvwpW2srfuXXZ9RW+GXc="/>
+            <table:column id="c_com_beehivecoll_Circle_officeHolders" property="officeHolders" z="Z5z96f4cVsXoQIdyRjI7q3zWwhk="/>
         </table:table>
     </page:list>
 </div>

@@ -3,9 +3,9 @@
 
 package com.beehivecoll.web;
 
-import com.beehivecoll.Circle;
+import com.beehivecoll.domain.Circle;
+import com.beehivecoll.domain.Officer;
 import com.beehivecoll.domain.Person;
-import com.beehivecoll.web.ApplicationConversionServiceFactoryBean;
 import org.springframework.beans.factory.annotation.Configurable;
 import org.springframework.core.convert.converter.Converter;
 import org.springframework.format.FormatterRegistry;
@@ -15,7 +15,7 @@ privileged aspect ApplicationConversionServiceFactoryBean_Roo_ConversionService 
     declare @type: ApplicationConversionServiceFactoryBean: @Configurable;
     
     public Converter<Circle, String> ApplicationConversionServiceFactoryBean.getCircleToStringConverter() {
-        return new org.springframework.core.convert.converter.Converter<com.beehivecoll.Circle, java.lang.String>() {
+        return new org.springframework.core.convert.converter.Converter<Circle, java.lang.String>() {
             public String convert(Circle circle) {
                 return new StringBuilder().append(circle.getName()).append(" ").append(circle.getDescription()).toString();
             }
@@ -23,17 +23,41 @@ privileged aspect ApplicationConversionServiceFactoryBean_Roo_ConversionService 
     }
     
     public Converter<Long, Circle> ApplicationConversionServiceFactoryBean.getIdToCircleConverter() {
-        return new org.springframework.core.convert.converter.Converter<java.lang.Long, com.beehivecoll.Circle>() {
-            public com.beehivecoll.Circle convert(java.lang.Long id) {
+        return new org.springframework.core.convert.converter.Converter<java.lang.Long, Circle>() {
+            public Circle convert(java.lang.Long id) {
                 return Circle.findCircle(id);
             }
         };
     }
     
     public Converter<String, Circle> ApplicationConversionServiceFactoryBean.getStringToCircleConverter() {
-        return new org.springframework.core.convert.converter.Converter<java.lang.String, com.beehivecoll.Circle>() {
-            public com.beehivecoll.Circle convert(String id) {
+        return new org.springframework.core.convert.converter.Converter<java.lang.String, Circle>() {
+            public Circle convert(String id) {
                 return getObject().convert(getObject().convert(id, Long.class), Circle.class);
+            }
+        };
+    }
+    
+    public Converter<Officer, String> ApplicationConversionServiceFactoryBean.getOfficerToStringConverter() {
+        return new org.springframework.core.convert.converter.Converter<com.beehivecoll.domain.Officer, java.lang.String>() {
+            public String convert(Officer officer) {
+                return new StringBuilder().append(officer.getTitle()).append(" ").append(officer.getDescription()).append(" ").append(officer.getResponsibility()).toString();
+            }
+        };
+    }
+    
+    public Converter<Long, Officer> ApplicationConversionServiceFactoryBean.getIdToOfficerConverter() {
+        return new org.springframework.core.convert.converter.Converter<java.lang.Long, com.beehivecoll.domain.Officer>() {
+            public com.beehivecoll.domain.Officer convert(java.lang.Long id) {
+                return Officer.findOfficer(id);
+            }
+        };
+    }
+    
+    public Converter<String, Officer> ApplicationConversionServiceFactoryBean.getStringToOfficerConverter() {
+        return new org.springframework.core.convert.converter.Converter<java.lang.String, com.beehivecoll.domain.Officer>() {
+            public com.beehivecoll.domain.Officer convert(String id) {
+                return getObject().convert(getObject().convert(id, Long.class), Officer.class);
             }
         };
     }
@@ -66,6 +90,9 @@ privileged aspect ApplicationConversionServiceFactoryBean_Roo_ConversionService 
         registry.addConverter(getCircleToStringConverter());
         registry.addConverter(getIdToCircleConverter());
         registry.addConverter(getStringToCircleConverter());
+        registry.addConverter(getOfficerToStringConverter());
+        registry.addConverter(getIdToOfficerConverter());
+        registry.addConverter(getStringToOfficerConverter());
         registry.addConverter(getPersonToStringConverter());
         registry.addConverter(getIdToPersonConverter());
         registry.addConverter(getStringToPersonConverter());

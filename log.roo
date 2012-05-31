@@ -41,3 +41,14 @@ field set --fieldName circles --type ~.Circle --class ~.domain.Person
 web mvc all --package com.beehivecoll
 exit
 // Spring Roo 1.2.1.RELEASE [rev 6eae723] log closed at 2012-05-31 13:37:05
+// [failed] entity jpa --class ~.domain.Role 
+// [failed] entity jpa --class ~.domain.Position
+entity jpa --class ~.domain.Officer
+field string --fieldName Title --notNull --sizeMin 5 --sizeMax 20
+field string --fieldName description --sizeMax 20
+field string --fieldName responsibility --sizeMax 1024
+// [failed] field set --fieldName holder --type ~.domain.Person --class ~.domain.Office
+field set --fieldName holder --type ~.domain.Person --class ~.domain.Officer
+field set --fieldName officeHolders --type ~.domain.Officer --class ~.Circle
+web mvc all --package com.beehivecoll.web
+web mvc all --package ~.web

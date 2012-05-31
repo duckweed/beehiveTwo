@@ -11,5 +11,9 @@
             <menu:item id="i_circle_new" messageCode="global_menu_new" url="/circles?form" z="Ipek/aGeUjMX9YPjuk2cfltXNXY="/>
             <menu:item id="i_circle_list" messageCode="global_menu_list" url="/circles?page=1&amp;size=${empty param.size ? 10 : param.size}" z="XXn/ySTWywjnDcOjWzK8ekW6/Z8="/>
         </menu:category>
+        <menu:category id="c_officer" z="CYx+20T56iprcFb/E4LN4hTamZU=">
+            <menu:item id="i_officer_new" messageCode="global_menu_new" url="/officers?form" z="ieUvRUgfQ/gVvf8b5DO4+34JvJc="/>
+            <menu:item id="i_officer_list" messageCode="global_menu_list" url="/officers?page=1&amp;size=${empty param.size ? 10 : param.size}" z="PtDLDTANlf4hiw9Sk7sx00+vOWA="/>
+        </menu:category>
     </menu:menu>
 </div>

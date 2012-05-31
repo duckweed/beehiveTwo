@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_beehivecoll_domain_Officer" items="${officers}" z="k5CYHCYecWSQNKyyl0ygoG/tTpM=">
+        <table:table data="${officers}" id="l_com_beehivecoll_domain_Officer" path="/officers" z="y7sie87kXC84xXy/oKfhjHPSudw=">
+            <table:column id="c_com_beehivecoll_domain_Officer_Title" property="title" z="lZbH5Etf7hfW7eXMj/LJKNlHcKM="/>
+            <table:column id="c_com_beehivecoll_domain_Officer_description" property="description" z="mtlJvSn5xUN3CCwe9qapF55M8U4="/>
+            <table:column id="c_com_beehivecoll_domain_Officer_responsibility" property="responsibility" z="ZnPxoKwJwl62pehgkmSrwXTefNw="/>
+            <table:column id="c_com_beehivecoll_domain_Officer_holder" property="holder" z="9IYOYKbP9q/suFlCU0TsEWnv61o="/>
+        </table:table>
+    </page:list>
+</div>
