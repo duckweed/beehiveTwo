@@ -1,0 +1,26 @@
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log opened at 2012-05-31 12:07:04
+project --topLevelPackage com.beehivecoll --projectName beehive-two
+jpa setup --database HYPERSONIC_PERSISTENT --provider HIBERNATE 
+entity jpa --class ~.domain.Person --testAutomatically 
+field string --fieldName firstName --notNull 
+field string --fieldName lastName --notNull 
+field string --fieldName email --notNull 
+perform tests
+web mvc setup
+web mvc all --package ~.web
+osgi start --url http://spring-roo-openshift-express-addon.googlecode.com/files/org.xebia.roo.addon.openshift-0.3.RELEASE.jar
+exit
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log closed at 2012-05-31 12:26:12
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log opened at 2012-05-31 12:26:16
+osgi uninstall --bundleSymbolicName org.xebia.roo.addon.openshift
+osgi ps
+osgi start --url http://spring-roo-openshift-express-addon.googlecode.com/files/org.xebia.roo.addon.openshift-0.3.RELEASE.jar
+osgi start --url http://spring-roo-openshift-express-addon.googlecode.com/files/org.xebia.roo.addon.openshift-0.2.RELEASE.jar
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log opened at 2012-05-31 12:28:21
+osgi uninstall --bundleSymbolicName org.xebia.roo.addon.openshift
+osgi start --url http://spring-roo-openshift-express-addon.googlecode.com/files/org.xebia.roo.addon.openshift-0.2.RELEASE.xxxjar
+osgi install --url http://spring-roo-openshift-express-addon.googlecode.com/files/org.xebia.roo.addon.openshift-0.2.RELEASE.jar
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log opened at 2012-05-31 12:31:15
+hint version
+hint stability
+version
