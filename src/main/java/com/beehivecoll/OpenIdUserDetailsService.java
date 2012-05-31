@@ -16,7 +16,7 @@ public class OpenIdUserDetailsService implements UserDetailsService {
         Person person = personList.size() == 0 ? null : personList.get(0);
 
         if (person == null) {
-            throw new UsernameNotFoundException(openIdIdentifier);
+            throw new UsernameNotFoundException("" + openIdIdentifier);
         }
 
         if (!person.isEnabled()) {
