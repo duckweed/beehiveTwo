@@ -9,8 +9,8 @@
         <field:input field="bio" id="c_com_beehivecoll_domain_Person_bio" z="0CkXAuhV8kU8EITHhcCeyRFF7Zk="/>
         <field:input field="username" id="c_com_beehivecoll_domain_Person_username" max="20" min="5" required="true" z="D8fkoVyF9UWAIMe3ZMr88HpRo7M="/>
         <field:input field="password" id="c_com_beehivecoll_domain_Person_password" z="ZLenlC26FY1w0e0uG/+jkvM8qYw="/>
-        <field:input field="firstname" id="c_com_beehivecoll_domain_Person_firstname" z="BThMgjpI7LYPV1u0NDByf9a/12k="/>
-        <field:input field="lastname" id="c_com_beehivecoll_domain_Person_lastname" z="OWzBiB74sYtElkEj5YW+LC5CCZo="/>
         <field:select field="userRole" id="c_com_beehivecoll_domain_Person_userRole" items="${userroles}" path="userroles" required="true" z="UqX4EXa/l0UG4yAaXblVPU9WF/I="/>
+        <field:input field="openIdIdentifier" id="c_com_beehivecoll_domain_Person_openIdIdentifier" z="pQgHHYCIvVsngzJxxrpudzgOlUM="/>
+        <field:input field="firstName" id="c_com_beehivecoll_domain_Person_firstName" z="GrYJtFO4zXZN7Jo2tIjozUJVMQg="/>
     </form:update>
 </div>

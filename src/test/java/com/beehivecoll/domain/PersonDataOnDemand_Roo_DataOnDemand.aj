@@ -27,8 +27,9 @@ privileged aspect PersonDataOnDemand_Roo_DataOnDemand {
         Person obj = new Person();
         setBio(obj, index);
         setEmail(obj, index);
-        setFirstname(obj, index);
-        setLastname(obj, index);
+        setFirstName(obj, index);
+        setLastName(obj, index);
+        setOpenIdIdentifier(obj, index);
         setPassword(obj, index);
         setUserRole(obj, index);
         setUsername(obj, index);
@@ -45,14 +46,19 @@ privileged aspect PersonDataOnDemand_Roo_DataOnDemand {
         obj.setEmail(email);
     }
     
-    public void PersonDataOnDemand.setFirstname(Person obj, int index) {
-        String firstname = "firstname_" + index;
-        obj.setFirstname(firstname);
+    public void PersonDataOnDemand.setFirstName(Person obj, int index) {
+        String firstName = "firstName_" + index;
+        obj.setFirstName(firstName);
     }
     
-    public void PersonDataOnDemand.setLastname(Person obj, int index) {
-        String lastname = "lastname_" + index;
-        obj.setLastname(lastname);
+    public void PersonDataOnDemand.setLastName(Person obj, int index) {
+        String lastName = "lastName_" + index;
+        obj.setLastName(lastName);
+    }
+    
+    public void PersonDataOnDemand.setOpenIdIdentifier(Person obj, int index) {
+        String openIdIdentifier = "openIdIdentifier_" + index;
+        obj.setOpenIdIdentifier(openIdIdentifier);
     }
     
     public void PersonDataOnDemand.setPassword(Person obj, int index) {

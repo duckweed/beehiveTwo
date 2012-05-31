@@ -10,28 +10,20 @@ import java.util.Set;
 
 privileged aspect Person_Roo_JavaBean {
     
-    public void Person.setUsername(String username) {
-        this.username = username;
+    public String Person.getFirstName() {
+        return this.firstName;
     }
     
-    public String Person.getFirstname() {
-        return this.firstname;
+    public void Person.setFirstName(String firstName) {
+        this.firstName = firstName;
     }
     
-    public void Person.setFirstname(String firstname) {
-        this.firstname = firstname;
+    public String Person.getLastName() {
+        return this.lastName;
     }
     
-    public String Person.getLastname() {
-        return this.lastname;
-    }
-    
-    public void Person.setLastname(String lastname) {
-        this.lastname = lastname;
-    }
-    
-    public void Person.setPassword(String password) {
-        this.password = password;
+    public void Person.setLastName(String lastName) {
+        this.lastName = lastName;
     }
     
     public UserRole Person.getUserRole() {
@@ -56,6 +48,14 @@ privileged aspect Person_Roo_JavaBean {
     
     public void Person.setEmail(String email) {
         this.email = email;
+    }
+    
+    public String Person.getOpenIdIdentifier() {
+        return this.openIdIdentifier;
+    }
+    
+    public void Person.setOpenIdIdentifier(String openIdIdentifier) {
+        this.openIdIdentifier = openIdIdentifier;
     }
     
     public Set<Circle> Person.getCircles() {

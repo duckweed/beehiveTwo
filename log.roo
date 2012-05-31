@@ -54,3 +54,20 @@ web mvc all --package com.beehivecoll.web
 web mvc all --package ~.web
 // Spring Roo 1.2.1.RELEASE [rev 6eae723] log opened at 2012-05-31 15:38:06
 persistence setup --provider HIBERNATE --database HYPERSONIC_IN_MEMORY --databaseName openidlogin --hostName localhost
+// [failed] finder add --finderName findPersonByOpenIdIdentifier --class ~.domain.Person
+finder add --finderName findPersonByOpenIdIdentifier --class ~.domain.Person
+finder add --finderName findPersonByOpenIdIdentifier --class ~.domain.Person
+web mvc all --package ~.web
+finder add --finderName findPersonByOpenIdIdentifier --class ~.domain.Person
+finder add --finderName findPersonByOpenIdIdentifier --class ~.domain.Person
+enum type --class ~.domain.EmployeeStatus
+enum type --class ~.domain.PersonStatus
+enum constant --name ACTIVE
+enum constant --name DORMANT
+enum constant --name RESIGNED
+enum constant --name TERMINATED
+finder add --finderName findEmployeesByOpenIdIdentifier --class ~.domain.Employee
+finder add --finderName findPeopleByOpenIdIdentifier --class ~.domain.Person
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log opened at 2012-05-31 16:27:58
+finder add --finderName findPeopleByOpenIdIdentifier --class ~.domain.Person
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log opened at 2012-06-01 07:41:43

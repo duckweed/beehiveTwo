@@ -8,8 +8,9 @@
         <field:display field="bio" id="s_com_beehivecoll_domain_Person_bio" object="${person}" z="LfzRSIjL9oRlSFPlQQQm801Oz3U="/>
         <field:display field="username" id="s_com_beehivecoll_domain_Person_username" object="${person}" z="1mVC1YebtlZgaMzO0UtX6FajpaA="/>
         <field:display field="password" id="s_com_beehivecoll_domain_Person_password" object="${person}" z="qsjqvziiqZc+BmXc5kg3paKbm0A="/>
-        <field:display field="firstname" id="s_com_beehivecoll_domain_Person_firstname" object="${person}" z="sjzisz73pjoSPBs1jD3lncvsV5U="/>
-        <field:display field="lastname" id="s_com_beehivecoll_domain_Person_lastname" object="${person}" z="5zwSfU+VTqnvYZVsomQaEHcZz5U="/>
         <field:display field="userRole" id="s_com_beehivecoll_domain_Person_userRole" object="${person}" z="8/cDRABA/jUK/q0ikKqgmq7qecY="/>
+        <field:display field="openIdIdentifier" id="s_com_beehivecoll_domain_Person_openIdIdentifier" object="${person}" z="TwRAA5IhrYfZYXQ1q2vGnbYJpc4="/>
+        <field:display field="firstName" id="s_com_beehivecoll_domain_Person_firstName" object="${person}" z="8uBIYdHPOu8CjAvnTr4BcC4YKRk="/>
+        <field:display field="lastName" id="s_com_beehivecoll_domain_Person_lastName" object="${person}" z="V2aNlT0zreQdGQfjX0kfKUJ7ioM="/>
     </page:show>
 </div>
