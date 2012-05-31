@@ -24,3 +24,20 @@ osgi install --url http://spring-roo-openshift-express-addon.googlecode.com/file
 hint version
 hint stability
 version
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log opened at 2012-05-31 13:31:14
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log opened at 2012-05-31 13:31:24
+osgi uninstall --bundleSymbolicName org.xebia.roo.addon.openshift
+exit
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log closed at 2012-05-31 13:31:37
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log opened at 2012-05-31 13:31:41
+entity jpa --class ~.Circle --testAutomatically 
+field string --fieldName name --notNull --sizeMin 5 --sizeMax 50
+field string --fieldName description --notNull --sizeMax 1024
+// [failed] field set --fieldName persons --type ~.Person 
+// [failed] field set --fieldName persons --type Person
+// [failed] field set --fieldName persons --type ~.Person
+field set --fieldName persons --type ~.domain.Person
+field set --fieldName circles --type ~.Circle --class ~.domain.Person
+web mvc all --package com.beehivecoll
+exit
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log closed at 2012-05-31 13:37:05

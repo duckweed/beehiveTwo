@@ -3,7 +3,9 @@
 
 package com.beehivecoll.domain;
 
+import com.beehivecoll.Circle;
 import com.beehivecoll.domain.Person;
+import java.util.Set;
 
 privileged aspect Person_Roo_JavaBean {
     
@@ -29,6 +31,14 @@ privileged aspect Person_Roo_JavaBean {
     
     public void Person.setEmail(String email) {
         this.email = email;
+    }
+    
+    public Set<Circle> Person.getCircles() {
+        return this.circles;
+    }
+    
+    public void Person.setCircles(Set<Circle> circles) {
+        this.circles = circles;
     }
     
 }

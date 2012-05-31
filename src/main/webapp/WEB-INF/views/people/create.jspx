@@ -6,6 +6,7 @@
         <field:input field="firstName" id="c_com_beehivecoll_domain_Person_firstName" required="true" z="7tnCvNJdfmNAiFYGZyPfmplonRU="/>
         <field:input field="lastName" id="c_com_beehivecoll_domain_Person_lastName" required="true" z="UYwijAXwCd3DV0K3fQKahvC1Sdg="/>
         <field:input field="email" id="c_com_beehivecoll_domain_Person_email" required="true" validationMessageCode="field_invalid_email" z="9onUlNpUdRWne7wGcVLOBH8RdkE="/>
+        <field:select field="circles" id="c_com_beehivecoll_domain_Person_circles" itemValue="id" items="${circles}" multiple="true" path="/circles" z="vcNrmYtgOxZGK4SR/RjUzxWjdAU="/>
     </form:create>
     <form:dependency dependencies="${dependencies}" id="d_com_beehivecoll_domain_Person" render="${not empty dependencies}" z="j7VgResXmywwrTLfesHEjL0Rdnk="/>
 </div>

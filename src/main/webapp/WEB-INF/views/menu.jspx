@@ -7,5 +7,9 @@
             <menu:item id="i_person_new" messageCode="global_menu_new" url="/people?form" z="IlD8NFD64X8egaRrgHbQeWKT68I="/>
             <menu:item id="i_person_list" messageCode="global_menu_list" url="/people?page=1&amp;size=${empty param.size ? 10 : param.size}" z="MFjeqYeiMgVzk2P/OWfFpXZhhS4="/>
         </menu:category>
+        <menu:category id="c_circle" z="MP9TMib6mksKE5TN71FuP+Isfac=">
+            <menu:item id="i_circle_new" messageCode="global_menu_new" url="/circles?form" z="Ipek/aGeUjMX9YPjuk2cfltXNXY="/>
+            <menu:item id="i_circle_list" messageCode="global_menu_list" url="/circles?page=1&amp;size=${empty param.size ? 10 : param.size}" z="XXn/ySTWywjnDcOjWzK8ekW6/Z8="/>
+        </menu:category>
     </menu:menu>
 </div>
