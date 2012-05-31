@@ -3,10 +3,11 @@
 
 package com.beehivecoll.domain;
 
+import com.beehivecoll.domain.Circle;
 import org.springframework.beans.factory.annotation.Configurable;
 
 privileged aspect Circle_Roo_Configurable {
     
-    declare @type: com.beehivecoll.domain.Circle: @Configurable;
+    declare @type: Circle: @Configurable;
     
 }

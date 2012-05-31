@@ -3,11 +3,13 @@
     <jsp:directive.page contentType="text/html;charset=UTF-8"/>
     <jsp:output omit-xml-declaration="yes"/>
     <page:show id="ps_com_beehivecoll_domain_Person" object="${person}" path="/people" z="vDVhxv1OneR1gsxwmU61AiGuBFY=">
-        <field:display field="firstName" id="s_com_beehivecoll_domain_Person_firstName" object="${person}" z="8uBIYdHPOu8CjAvnTr4BcC4YKRk="/>
-        <field:display field="lastName" id="s_com_beehivecoll_domain_Person_lastName" object="${person}" z="V2aNlT0zreQdGQfjX0kfKUJ7ioM="/>
         <field:display field="email" id="s_com_beehivecoll_domain_Person_email" object="${person}" z="mG7Vrc2SrlxcjOmnOFksZ/60K1c="/>
         <field:display field="circles" id="s_com_beehivecoll_domain_Person_circles" object="${person}" z="WfR6AWc5ojzmnLrE/hVGq0NM7tg="/>
-        <field:display date="true" dateTimePattern="${person_creation_date_format}" field="creation" id="s_com_beehivecoll_domain_Person_creation" object="${person}" z="+qAOquJJAyZYdl/RRkpBO5nkFJ4="/>
         <field:display field="bio" id="s_com_beehivecoll_domain_Person_bio" object="${person}" z="LfzRSIjL9oRlSFPlQQQm801Oz3U="/>
+        <field:display field="username" id="s_com_beehivecoll_domain_Person_username" object="${person}" z="1mVC1YebtlZgaMzO0UtX6FajpaA="/>
+        <field:display field="password" id="s_com_beehivecoll_domain_Person_password" object="${person}" z="qsjqvziiqZc+BmXc5kg3paKbm0A="/>
+        <field:display field="firstname" id="s_com_beehivecoll_domain_Person_firstname" object="${person}" z="sjzisz73pjoSPBs1jD3lncvsV5U="/>
+        <field:display field="lastname" id="s_com_beehivecoll_domain_Person_lastname" object="${person}" z="5zwSfU+VTqnvYZVsomQaEHcZz5U="/>
+        <field:display field="userRole" id="s_com_beehivecoll_domain_Person_userRole" object="${person}" z="8/cDRABA/jUK/q0ikKqgmq7qecY="/>
     </page:show>
 </div>

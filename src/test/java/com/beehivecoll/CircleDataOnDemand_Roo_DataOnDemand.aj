@@ -3,8 +3,8 @@
 
 package com.beehivecoll;
 
+import com.beehivecoll.CircleDataOnDemand;
 import com.beehivecoll.domain.Circle;
-
 import java.security.SecureRandom;
 import java.util.ArrayList;
 import java.util.Iterator;

@@ -3,6 +3,7 @@
 
 package com.beehivecoll.domain;
 
+import com.beehivecoll.domain.Circle;
 import org.apache.commons.lang3.builder.ReflectionToStringBuilder;
 import org.apache.commons.lang3.builder.ToStringStyle;
 

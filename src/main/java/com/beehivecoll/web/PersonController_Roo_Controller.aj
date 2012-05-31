@@ -5,8 +5,10 @@ package com.beehivecoll.web;
 
 import com.beehivecoll.domain.Circle;
 import com.beehivecoll.domain.Person;
+import com.beehivecoll.domain.UserRole;
 import com.beehivecoll.web.PersonController;
 import java.io.UnsupportedEncodingException;
+import java.util.Arrays;
 import javax.servlet.http.HttpServletRequest;
 import javax.validation.Valid;
 import org.springframework.ui.Model;
@@ -88,6 +90,7 @@ privileged aspect PersonController_Roo_Controller {
     void PersonController.populateEditForm(Model uiModel, Person person) {
         uiModel.addAttribute("person", person);
         uiModel.addAttribute("circles", Circle.findAllCircles());
+        uiModel.addAttribute("userroles", Arrays.asList(UserRole.values()));
     }
     
     String PersonController.encodeUrlPathSegment(String pathSegment, HttpServletRequest httpServletRequest) {

@@ -3,6 +3,7 @@
 
 package com.beehivecoll.domain;
 
+import com.beehivecoll.domain.Circle;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -12,7 +13,7 @@ import javax.persistence.Version;
 
 privileged aspect Circle_Roo_Jpa_Entity {
     
-    declare @type: com.beehivecoll.domain.Circle: @Entity;
+    declare @type: Circle: @Entity;
     
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)

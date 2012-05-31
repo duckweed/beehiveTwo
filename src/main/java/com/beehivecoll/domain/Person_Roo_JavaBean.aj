@@ -5,25 +5,41 @@ package com.beehivecoll.domain;
 
 import com.beehivecoll.domain.Circle;
 import com.beehivecoll.domain.Person;
-import java.util.Date;
+import com.beehivecoll.domain.UserRole;
 import java.util.Set;
 
 privileged aspect Person_Roo_JavaBean {
     
-    public String Person.getFirstName() {
-        return this.firstName;
+    public void Person.setUsername(String username) {
+        this.username = username;
     }
     
-    public void Person.setFirstName(String firstName) {
-        this.firstName = firstName;
+    public String Person.getFirstname() {
+        return this.firstname;
     }
     
-    public String Person.getLastName() {
-        return this.lastName;
+    public void Person.setFirstname(String firstname) {
+        this.firstname = firstname;
     }
     
-    public void Person.setLastName(String lastName) {
-        this.lastName = lastName;
+    public String Person.getLastname() {
+        return this.lastname;
+    }
+    
+    public void Person.setLastname(String lastname) {
+        this.lastname = lastname;
+    }
+    
+    public void Person.setPassword(String password) {
+        this.password = password;
+    }
+    
+    public UserRole Person.getUserRole() {
+        return this.userRole;
+    }
+    
+    public void Person.setUserRole(UserRole userRole) {
+        this.userRole = userRole;
     }
     
     public String Person.getBio() {
@@ -40,14 +56,6 @@ privileged aspect Person_Roo_JavaBean {
     
     public void Person.setEmail(String email) {
         this.email = email;
-    }
-    
-    public Date Person.getCreation() {
-        return this.creation;
-    }
-    
-    public void Person.setCreation(Date creation) {
-        this.creation = creation;
     }
     
     public Set<Circle> Person.getCircles() {

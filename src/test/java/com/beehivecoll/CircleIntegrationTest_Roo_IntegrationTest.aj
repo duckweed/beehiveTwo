@@ -3,8 +3,9 @@
 
 package com.beehivecoll;
 
+import com.beehivecoll.CircleDataOnDemand;
+import com.beehivecoll.CircleIntegrationTest;
 import com.beehivecoll.domain.Circle;
-
 import java.util.List;
 import org.junit.Assert;
 import org.junit.Test;

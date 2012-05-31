@@ -6,6 +6,7 @@ package com.beehivecoll.web;
 import com.beehivecoll.domain.Circle;
 import com.beehivecoll.domain.Officer;
 import com.beehivecoll.domain.Person;
+import com.beehivecoll.web.ApplicationConversionServiceFactoryBean;
 import org.springframework.beans.factory.annotation.Configurable;
 import org.springframework.core.convert.converter.Converter;
 import org.springframework.format.FormatterRegistry;
@@ -15,7 +16,7 @@ privileged aspect ApplicationConversionServiceFactoryBean_Roo_ConversionService 
     declare @type: ApplicationConversionServiceFactoryBean: @Configurable;
     
     public Converter<Circle, String> ApplicationConversionServiceFactoryBean.getCircleToStringConverter() {
-        return new org.springframework.core.convert.converter.Converter<Circle, java.lang.String>() {
+        return new org.springframework.core.convert.converter.Converter<com.beehivecoll.domain.Circle, java.lang.String>() {
             public String convert(Circle circle) {
                 return new StringBuilder().append(circle.getName()).append(" ").append(circle.getDescription()).toString();
             }
@@ -23,16 +24,16 @@ privileged aspect ApplicationConversionServiceFactoryBean_Roo_ConversionService 
     }
     
     public Converter<Long, Circle> ApplicationConversionServiceFactoryBean.getIdToCircleConverter() {
-        return new org.springframework.core.convert.converter.Converter<java.lang.Long, Circle>() {
-            public Circle convert(java.lang.Long id) {
+        return new org.springframework.core.convert.converter.Converter<java.lang.Long, com.beehivecoll.domain.Circle>() {
+            public com.beehivecoll.domain.Circle convert(java.lang.Long id) {
                 return Circle.findCircle(id);
             }
         };
     }
     
     public Converter<String, Circle> ApplicationConversionServiceFactoryBean.getStringToCircleConverter() {
-        return new org.springframework.core.convert.converter.Converter<java.lang.String, Circle>() {
-            public Circle convert(String id) {
+        return new org.springframework.core.convert.converter.Converter<java.lang.String, com.beehivecoll.domain.Circle>() {
+            public com.beehivecoll.domain.Circle convert(String id) {
                 return getObject().convert(getObject().convert(id, Long.class), Circle.class);
             }
         };
@@ -65,7 +66,7 @@ privileged aspect ApplicationConversionServiceFactoryBean_Roo_ConversionService 
     public Converter<Person, String> ApplicationConversionServiceFactoryBean.getPersonToStringConverter() {
         return new org.springframework.core.convert.converter.Converter<com.beehivecoll.domain.Person, java.lang.String>() {
             public String convert(Person person) {
-                return new StringBuilder().append(person.getFirstName()).append(" ").append(person.getLastName()).append(" ").append(person.getEmail()).toString();
+                return new StringBuilder().append(person.getUsername()).append(" ").append(person.getPassword()).append(" ").append(person.getFirstname()).append(" ").append(person.getLastname()).toString();
             }
         };
     }

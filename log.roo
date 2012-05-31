@@ -52,3 +52,5 @@ field set --fieldName holder --type ~.domain.Person --class ~.domain.Officer
 field set --fieldName officeHolders --type ~.domain.Officer --class ~.Circle
 web mvc all --package com.beehivecoll.web
 web mvc all --package ~.web
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log opened at 2012-05-31 15:38:06
+persistence setup --provider HIBERNATE --database HYPERSONIC_IN_MEMORY --databaseName openidlogin --hostName localhost

@@ -4,7 +4,7 @@
     <jsp:output omit-xml-declaration="yes"/>
     <form:update id="fu_com_beehivecoll_domain_Officer" modelAttribute="officer" path="/officers" versionField="Version" z="hNWG0Aohjs2L0QNv+TkgKDHMqSw=">
         <field:input field="Title" id="c_com_beehivecoll_domain_Officer_Title" max="20" min="5" required="true" z="5yZCyRJgJaD/QU6SPoAPGD9mvUs="/>
-        <field:input field="description" id="c_com_beehivecoll_domain_Officer_description" max="20" required="false" z="HWxMUCs7TCskljg4yp0v8WARbeM="/>
+        <field:input field="description" id="c_com_beehivecoll_domain_Officer_description" max="20" required="false" z="user-managed"/>
         <field:textarea field="responsibility" id="c_com_beehivecoll_domain_Officer_responsibility" z="w9W/q4qn6NuM/5J5Xb9FQwq77W4="/>
         <field:select field="holder" id="c_com_beehivecoll_domain_Officer_holder" itemValue="id" items="${people}" multiple="true" path="/people" z="ZlVLzLkP31OVvd1BtDQKC+uQqAQ="/>
     </form:update>

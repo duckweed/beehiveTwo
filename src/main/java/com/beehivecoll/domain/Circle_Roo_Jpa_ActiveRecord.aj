@@ -3,6 +3,7 @@
 
 package com.beehivecoll.domain;
 
+import com.beehivecoll.domain.Circle;
 import java.util.List;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
@@ -48,7 +49,7 @@ privileged aspect Circle_Roo_Jpa_ActiveRecord {
         if (this.entityManager.contains(this)) {
             this.entityManager.remove(this);
         } else {
-            Circle attached = findCircle(this.id);
+            Circle attached = Circle.findCircle(this.id);
             this.entityManager.remove(attached);
         }
     }

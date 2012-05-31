@@ -3,6 +3,10 @@
 
 package com.beehivecoll.domain;
 
+import com.beehivecoll.domain.Circle;
+import com.beehivecoll.domain.CircleController;
+import com.beehivecoll.domain.Officer;
+import com.beehivecoll.domain.Person;
 import java.io.UnsupportedEncodingException;
 import javax.servlet.http.HttpServletRequest;
 import javax.validation.Valid;

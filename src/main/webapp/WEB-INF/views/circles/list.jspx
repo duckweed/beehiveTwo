@@ -2,12 +2,12 @@
 <div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
     <jsp:directive.page contentType="text/html;charset=UTF-8"/>
     <jsp:output omit-xml-declaration="yes"/>
-    <page:list id="pl_com_beehivecoll_Circle" items="${circles}" z="1B1bIjY56vg0bCgDKVPJ6IeOjBw=">
-        <table:table data="${circles}" id="l_com_beehivecoll_Circle" path="/circles" z="BxBEf0oQp+M3izRghs9VjBHg9Mw=">
-            <table:column id="c_com_beehivecoll_Circle_name" property="name" z="b84b3JmgNmAwRxx5AlKeR9P2HQg="/>
-            <table:column id="c_com_beehivecoll_Circle_description" property="description" z="WXQx/Hsfm3CrPu+s3dH0JWkc8Ew="/>
-            <table:column id="c_com_beehivecoll_Circle_persons" property="persons" z="uRfjvbCHvwpW2srfuXXZ9RW+GXc="/>
-            <table:column id="c_com_beehivecoll_Circle_officeHolders" property="officeHolders" z="Z5z96f4cVsXoQIdyRjI7q3zWwhk="/>
+    <page:list id="pl_com_beehivecoll_domain_Circle" items="${circles}" z="K+I/hNmDqMZviOWedEsQKiECQYg=">
+        <table:table data="${circles}" id="l_com_beehivecoll_domain_Circle" path="/circles" z="0+Qcn/kdvE6LLZFSJz6//xG7Ric=">
+            <table:column id="c_com_beehivecoll_domain_Circle_name" property="name" z="q2bW6n96DjXpDR/aAkTMAMrX9+w="/>
+            <table:column id="c_com_beehivecoll_domain_Circle_description" property="description" z="oOBWRA5IkXexg0+jp1D8uPZFmbc="/>
+            <table:column id="c_com_beehivecoll_domain_Circle_persons" property="persons" z="KMeO4YaeqMnuChliOXto1a/V5ww="/>
+            <table:column id="c_com_beehivecoll_domain_Circle_officeHolders" property="officeHolders" z="OU4NaPjZwXrDAojZDWF4CkK/GeA="/>
         </table:table>
     </page:list>
 </div>
