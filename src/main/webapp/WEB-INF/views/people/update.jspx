@@ -4,8 +4,10 @@
     <jsp:output omit-xml-declaration="yes"/>
     <form:update id="fu_com_beehivecoll_domain_Person" modelAttribute="person" path="/people" versionField="Version" z="u5GbNdTMw3I9TvqBALqHAhc+nJI=">
         <field:input field="firstName" id="c_com_beehivecoll_domain_Person_firstName" required="true" z="7tnCvNJdfmNAiFYGZyPfmplonRU="/>
-        <field:input field="lastName" id="c_com_beehivecoll_domain_Person_lastName" required="false" z="UYwijAXwCd3DV0K3fQKahvC1Sdg="/>
-        <field:input field="email" id="c_com_beehivecoll_domain_Person_email" required="false" validationMessageCode="field_invalid_email" z="9onUlNpUdRWne7wGcVLOBH8RdkE="/>
+        <field:input field="lastName" id="c_com_beehivecoll_domain_Person_lastName" required="false" z="user-managed"/>
+        <field:input field="email" id="c_com_beehivecoll_domain_Person_email" required="false" validationMessageCode="field_invalid_email" z="user-managed"/>
         <field:select field="circles" id="c_com_beehivecoll_domain_Person_circles" itemValue="id" items="${circles}" multiple="true" path="/circles" z="vcNrmYtgOxZGK4SR/RjUzxWjdAU="/>
+        <field:datetime dateTimePattern="${person_creation_date_format}" field="creation" id="c_com_beehivecoll_domain_Person_creation" z="2aDjDsbQB7kWphmkJEJM1GXJcEI="/>
+        <field:input field="bio" id="c_com_beehivecoll_domain_Person_bio" z="0CkXAuhV8kU8EITHhcCeyRFF7Zk="/>
     </form:update>
 </div>

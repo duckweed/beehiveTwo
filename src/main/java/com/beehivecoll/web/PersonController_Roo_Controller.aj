@@ -5,7 +5,7 @@ package com.beehivecoll.web;
 
 import com.beehivecoll.domain.Circle;
 import com.beehivecoll.domain.Person;
-
+import com.beehivecoll.web.PersonController;
 import java.io.UnsupportedEncodingException;
 import javax.servlet.http.HttpServletRequest;
 import javax.validation.Valid;

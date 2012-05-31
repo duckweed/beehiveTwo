@@ -8,6 +8,8 @@
             <table:column id="c_com_beehivecoll_domain_Person_lastName" property="lastName" z="khOMzHxoKHd60r3RPyFwWuO+ShA="/>
             <table:column id="c_com_beehivecoll_domain_Person_email" property="email" z="KD+81MQ1fKckNa0qx9yO16oQz3I="/>
             <table:column id="c_com_beehivecoll_domain_Person_circles" property="circles" z="uxxb9z79uC/EDgR4QqnWB8UuKvg="/>
+            <table:column date="true" dateTimePattern="${person_creation_date_format}" id="c_com_beehivecoll_domain_Person_creation" property="creation" z="IgrER4KBOEfabmncHEFRfGoCuNk="/>
+            <table:column id="c_com_beehivecoll_domain_Person_bio" property="bio" z="RhlhVR0gO024eQcZt8KwI1lVFrY="/>
         </table:table>
     </page:list>
 </div>
