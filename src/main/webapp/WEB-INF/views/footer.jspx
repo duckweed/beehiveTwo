@@ -9,15 +9,6 @@
       <spring:message code="button_home"/>
     </a>
   </span>
-  <c:if test="${pageContext['request'].userPrincipal != null}">
-    <c:out value=" | "/>
-    <span>
-      <spring:url value="/resources/j_spring_security_logout" var="logout"/>
-      <a href="${logout}">
-        <spring:message code="security_logout"/>
-      </a>
-    </span>
-  </c:if>
 
   <span id="language">
     <c:out value=" | "/>
