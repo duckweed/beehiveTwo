@@ -33,3 +33,7 @@ alter table officer_holder add constraint FKACD788D57B4D92BF foreign key (office
 alter table officer_holder add constraint FKACD788D57E57324E foreign key (holder) references person
 alter table person_circles add constraint FK970BFAB98B73FFF7 foreign key (person) references person
 alter table person_circles add constraint FK970BFAB9DF4463C0 foreign key (circles) references circle
+SET AUTOCOMMIT FALSE
+INSERT INTO PERSON VALUES(1,'','','','','https://www.google.com/accounts/o8/id?id=AItOawllxS9ggXVZuBzOV7Tak4xTiplqB2Vrapc','',1,'andrew',0)
+COMMIT
+SET AUTOCOMMIT TRUE
