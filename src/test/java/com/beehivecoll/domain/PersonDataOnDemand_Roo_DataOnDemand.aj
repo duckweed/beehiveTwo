@@ -74,7 +74,7 @@ privileged aspect PersonDataOnDemand_Roo_DataOnDemand {
     public void PersonDataOnDemand.setUsername(Person obj, int index) {
         String username = "username_" + index;
         if (username.length() > 20) {
-            username = username.substring(0, 20);
+            username = new Random().nextInt(10) + username.substring(1, 20);
         }
         obj.setUsername(username);
     }

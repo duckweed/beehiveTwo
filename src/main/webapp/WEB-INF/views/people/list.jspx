@@ -7,9 +7,9 @@
             <table:column id="c_com_beehivecoll_domain_Person_bio" property="bio" z="RhlhVR0gO024eQcZt8KwI1lVFrY="/>
             <table:column id="c_com_beehivecoll_domain_Person_username" property="username" z="x6Qir3wOMLiWY/N5LJ+54sXB5fA="/>
             <table:column id="c_com_beehivecoll_domain_Person_password" property="password" z="YPQwmmZ9iUwn9LqybN10Wl56Guc="/>
-            <table:column id="c_com_beehivecoll_domain_Person_firstname" property="firstname" z="a8xqDB2eFmnHBJxikg03eJZO9oc="/>
-            <table:column id="c_com_beehivecoll_domain_Person_lastname" property="lastname" z="+FNgcBg8ia8UlwAy1ZgSRq+ty6c="/>
             <table:column id="c_com_beehivecoll_domain_Person_userRole" property="userRole" z="HaVbiutWzevDKjqz49Una0jkB2Y="/>
+            <table:column id="c_com_beehivecoll_domain_Person_firstName" property="firstName" z="CeadzB/roy+WQ7zEjOm1Gzmjk+0="/>
+            <table:column id="c_com_beehivecoll_domain_Person_lastName" property="lastName" z="khOMzHxoKHd60r3RPyFwWuO+ShA="/>
         </table:table>
     </page:list>
 </div>

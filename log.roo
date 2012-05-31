@@ -71,3 +71,8 @@ finder add --finderName findPeopleByOpenIdIdentifier --class ~.domain.Person
 // Spring Roo 1.2.1.RELEASE [rev 6eae723] log opened at 2012-05-31 16:27:58
 finder add --finderName findPeopleByOpenIdIdentifier --class ~.domain.Person
 // Spring Roo 1.2.1.RELEASE [rev 6eae723] log opened at 2012-06-01 07:41:43
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log opened at 2012-06-01 07:52:28
+// [failed] field string --class ~.Person --fieldName uniq --unique
+field string --class ~.domain.Person --fieldName uniq --unique
+// [failed] field string --class ~.Person --fieldName uniq --unique
+field string --class ~.domain.Person --fieldName uniq --unique
