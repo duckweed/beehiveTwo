@@ -4,6 +4,9 @@
     <jsp:output omit-xml-declaration="yes"/>
 
     <spring:url var="home" value="/"/>
+    <spring:url value="/login" var="login"/>
+    <spring:url value="/people?updateUser" var="updateUser"/>
+    <spring:url value="/resources/j_spring_security_logout" var="logout"/>
 
     <spring:message code="button_home" var="home_label" htmlEscape="false"/>
     <a href="${home}" name="${fn:escapeXml(home_label)}" title="${fn:escapeXml(home_label)}">
@@ -14,7 +17,6 @@
 
     <c:if test="${pageContext['request'].userPrincipal == null}">
     <span>
-      <spring:url value="/login" var="login"/>
       <a href="${login}">
           <spring:message code="security_login"/>
       </a>
@@ -23,10 +25,18 @@
 
     <c:if test="${pageContext['request'].userPrincipal != null}">
     <span>
-      <spring:url value="/resources/j_spring_security_logout" var="logout"/>
+      <a href="${home}">
+          <spring:message code="button_home"/>
+      </a>
+      <c:out value=" | "/>
+      <a href="${updateUser}">
+          <spring:message code="update_user"/>
+      </a>
+      <c:out value=" | "/>
       <a href="${logout}">
           <spring:message code="security_logout"/>
       </a>
+        <!--<img src="http://www.gravatar.com/avatar/6469e03de43676ce46c02ceccfb6c831?d=wavatar" alt="image" border="0"/>-->
     </span>
     </c:if>
 

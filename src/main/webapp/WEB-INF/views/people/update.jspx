@@ -6,8 +6,8 @@
         <field:input field="username" id="c_com_beehivecoll_domain_Person_username" max="20" min="5" required="true" z="D8fkoVyF9UWAIMe3ZMr88HpRo7M="/>
         <field:input field="firstName" id="c_com_beehivecoll_domain_Person_firstName" z="GrYJtFO4zXZN7Jo2tIjozUJVMQg="/>
         <field:input field="lastName" id="c_com_beehivecoll_domain_Person_lastName" required="false" z="user-managed"/>
-        <field:textarea field="bio" id="c_com_beehivecoll_domain_Person_bio" z="user-managed"/>
         <field:input field="email" id="c_com_beehivecoll_domain_Person_email" required="false" validationMessageCode="field_invalid_email" z="user-managed"/>
+        <field:textarea field="bio" id="c_com_beehivecoll_domain_Person_bio" z="user-managed"/>
         <field:input field="password" id="c_com_beehivecoll_domain_Person_password" render="false" z="user-managed"/>
         <field:select field="userRole" id="c_com_beehivecoll_domain_Person_userRole" items="${userroles}" path="userroles" render="false" required="true" z="user-managed"/>
         <field:select field="circles" id="c_com_beehivecoll_domain_Person_circles" itemValue="id" items="${circles}" multiple="true" path="/circles" render="false" z="user-managed"/>
