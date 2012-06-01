@@ -13,7 +13,7 @@
         <intercept-url pattern="/resources/**" access="permitAll" />
         <intercept-url pattern="/people?form" access="permitAll" />
         <intercept-url pattern="/**" access="isAuthenticated()" />
-        <openid-login authentication-failure-url="/login?login_error=t" user-service-ref="openIdUserService" />
+        <openid-login authentication-failure-url="/login?login_error=t" user-service-ref="openIdUserService" default-target-url="/people?updateUser"/>
     </http>
     <!-- Configure Authentication mechanism -->
     <authentication-manager alias="authenticationManager">

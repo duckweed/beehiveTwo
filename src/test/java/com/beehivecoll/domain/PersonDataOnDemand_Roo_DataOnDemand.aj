@@ -38,6 +38,9 @@ privileged aspect PersonDataOnDemand_Roo_DataOnDemand {
     
     public void PersonDataOnDemand.setBio(Person obj, int index) {
         String bio = "bio_" + index;
+        if (bio.length() > 1024) {
+            bio = bio.substring(0, 1024);
+        }
         obj.setBio(bio);
     }
     

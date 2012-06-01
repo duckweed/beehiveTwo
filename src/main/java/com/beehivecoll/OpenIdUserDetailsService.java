@@ -4,7 +4,6 @@ import com.beehivecoll.domain.Person;
 import org.springframework.security.authentication.DisabledException;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
-import org.springframework.security.core.userdetails.UsernameNotFoundException;
 
 import java.util.List;
 
@@ -16,7 +15,9 @@ public class OpenIdUserDetailsService implements UserDetailsService {
         Person person = personList.size() == 0 ? null : personList.get(0);
 
         if (person == null) {
-            throw new UsernameNotFoundException("" + openIdIdentifier);
+            person = new Person();
+            person.setOpenIdIdentifier(openIdIdentifier);
+            return person;
         }
 
         if (!person.isEnabled()) {
