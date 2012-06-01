@@ -150,12 +150,14 @@ a.menu, a.menu:link, a.menu:visited {display:block; width:150px; height:25px;}
 
 h1,h2,h3 {
 	font-family: Helvetica, sans-serif;
-	color: #7db223;
+	background-color: #7db223;
+	color: white;
 }
 
 h1 {
 	font-size: 20px;
 	line-height: 26px;
+    text-align: center;
 }
 
 h2 {
