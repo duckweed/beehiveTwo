@@ -1,21 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page"
-     version="2.0">
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
     <jsp:directive.page contentType="text/html;charset=UTF-8"/>
     <jsp:output omit-xml-declaration="yes"/>
     <form:update id="fu_com_beehivecoll_domain_Person" modelAttribute="person" path="/people" versionField="Version" z="u5GbNdTMw3I9TvqBALqHAhc+nJI=">
-        <field:input field="username" id="c_com_beehivecoll_domain_Person_username" max="20" min="5" required="true"
-                     z="D8fkoVyF9UWAIMe3ZMr88HpRo7M="/>
+        <field:input field="username" id="c_com_beehivecoll_domain_Person_username" max="20" min="5" required="true" z="D8fkoVyF9UWAIMe3ZMr88HpRo7M="/>
         <field:input field="firstName" id="c_com_beehivecoll_domain_Person_firstName" z="GrYJtFO4zXZN7Jo2tIjozUJVMQg="/>
         <field:input field="lastName" id="c_com_beehivecoll_domain_Person_lastName" required="false" z="user-managed"/>
-        <field:textarea field="bio" id="c_com_beehivecoll_domain_Person_bio" z="0CkXAuhV8kU8EITHhcCeyRFF7Zk="/>
-        <field:input field="email" id="c_com_beehivecoll_domain_Person_email" required="false" validationMessageCode="field_invalid_email"
-                     z="user-managed"/>
-        <field:input render="false" field="password" id="c_com_beehivecoll_domain_Person_password" z="ZLenlC26FY1w0e0uG/+jkvM8qYw="/>
-        <field:select render="false" field="userRole" id="c_com_beehivecoll_domain_Person_userRole" items="${userroles}" path="userroles"
-                      required="true" z="UqX4EXa/l0UG4yAaXblVPU9WF/I="/>
-        <field:select render="false" field="circles" id="c_com_beehivecoll_domain_Person_circles" itemValue="id" items="${circles}" multiple="true"
-                      path="/circles" z="vcNrmYtgOxZGK4SR/RjUzxWjdAU="/>
-        <field:input render="false" field="openIdIdentifier" id="c_com_beehivecoll_domain_Person_openIdIdentifier" z="pQgHHYCIvVsngzJxxrpudzgOlUM="/>
+        <field:textarea field="bio" id="c_com_beehivecoll_domain_Person_bio" z="user-managed"/>
+        <field:input field="email" id="c_com_beehivecoll_domain_Person_email" required="false" validationMessageCode="field_invalid_email" z="user-managed"/>
+        <field:input field="password" id="c_com_beehivecoll_domain_Person_password" render="false" z="user-managed"/>
+        <field:select field="userRole" id="c_com_beehivecoll_domain_Person_userRole" items="${userroles}" path="userroles" render="false" required="true" z="user-managed"/>
+        <field:select field="circles" id="c_com_beehivecoll_domain_Person_circles" itemValue="id" items="${circles}" multiple="true" path="/circles" render="false" z="user-managed"/>
+        <field:input field="openIdIdentifier" id="c_com_beehivecoll_domain_Person_openIdIdentifier" render="false" z="user-managed"/>
     </form:update>
 </div>
