@@ -3,7 +3,7 @@
     <jsp:directive.page contentType="text/html;charset=UTF-8"/>
     <jsp:output omit-xml-declaration="yes"/>
     <form:create id="fc_com_beehivecoll_domain_Circle" modelAttribute="circle" path="/circles" render="${empty dependencies}" z="qUPo9wL8F0nHfGl+vqCAMDjyJZs=">
-        <field:input field="name" id="c_com_beehivecoll_domain_Circle_name" required="true" z="vwfZOdS8r3hbeC5OtaFQsNt8j3w="/>
+        <field:input field="name" id="c_com_beehivecoll_domain_Circle_name" required="true" z="user-managed"/>
         <field:textarea field="description" id="c_com_beehivecoll_domain_Circle_description" required="true" z="mbZMJTpFlGZE3FBSVUSY1AgI1U8="/>
         <field:select field="persons" id="c_com_beehivecoll_domain_Circle_persons" itemValue="id" items="${people}" multiple="true" path="/people" z="7LW72kEZTqJFJA/4W8OjqYr+Lu4="/>
         <field:select field="officeHolders" id="c_com_beehivecoll_domain_Circle_officeHolders" itemValue="id" items="${officers}" multiple="true" path="/officers" z="t4+G3ym+aAYNzBWNs5DqTfV/tS0="/>

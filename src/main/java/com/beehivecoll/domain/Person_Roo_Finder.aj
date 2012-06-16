@@ -3,19 +3,18 @@
 
 package com.beehivecoll.domain;
 
+import com.beehivecoll.domain.Person;
 import javax.persistence.EntityManager;
 import javax.persistence.TypedQuery;
 
 privileged aspect Person_Roo_Finder {
-
+    
     public static TypedQuery<Person> Person.findPeopleByOpenIdIdentifier(String openIdIdentifier) {
-        if (openIdIdentifier == null || openIdIdentifier.length() == 0) {
-            throw new IllegalArgumentException("The openIdIdentifier argument is required");
-        }
+        if (openIdIdentifier == null || openIdIdentifier.length() == 0) throw new IllegalArgumentException("The openIdIdentifier argument is required");
         EntityManager em = Person.entityManager();
         TypedQuery<Person> q = em.createQuery("SELECT o FROM Person AS o WHERE o.openIdIdentifier = :openIdIdentifier", Person.class);
         q.setParameter("openIdIdentifier", openIdIdentifier);
         return q;
     }
-
+    
 }
