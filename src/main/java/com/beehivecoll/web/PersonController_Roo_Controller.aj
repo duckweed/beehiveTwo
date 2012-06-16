@@ -8,12 +8,9 @@ import com.beehivecoll.domain.Person;
 import com.beehivecoll.domain.UserRole;
 import com.beehivecoll.web.PersonController;
 import java.io.UnsupportedEncodingException;
-import java.security.Principal;
 import java.util.Arrays;
 import javax.servlet.http.HttpServletRequest;
 import javax.validation.Valid;
-
-import org.springframework.security.openid.OpenIDAuthenticationToken;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -80,12 +77,6 @@ privileged aspect PersonController_Roo_Controller {
         return "people/update";
     }
     
-    @RequestMapping(params = "updateUser", produces = "text/html")
-    public String PersonController.updateUser(Principal principal, Model uiModel) {
-        populateEditForm(uiModel, (Person) ((OpenIDAuthenticationToken)principal).getPrincipal());
-        return "people/update";
-    }
-
     @RequestMapping(value = "/{id}", method = RequestMethod.DELETE, produces = "text/html")
     public String PersonController.delete(@PathVariable("id") Long id, @RequestParam(value = "page", required = false) Integer page, @RequestParam(value = "size", required = false) Integer size, Model uiModel) {
         Person person = Person.findPerson(id);
