@@ -1,6 +1,7 @@
 package com.beehivecoll;
 
 import com.beehivecoll.domain.Person;
+import org.apache.commons.lang3.RandomStringUtils;
 import org.springframework.security.authentication.DisabledException;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
@@ -17,6 +18,8 @@ public class OpenIdUserDetailsService implements UserDetailsService {
         if (person == null) {
             person = new Person();
             person.setOpenIdIdentifier(openIdIdentifier);
+            person.setUsername(RandomStringUtils.random(7));
+            person.persist();
             return person;
         }
 
